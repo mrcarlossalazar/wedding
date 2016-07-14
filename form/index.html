@@ -1,0 +1,100 @@
+<html>
+	<head><title>Form Test</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script language="JavaScript" src="/form/js/jquery_popup.js"></script>
+
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<link rel="stylesheet" href="/form/css/jquery_popup.css" />
+
+	</head>
+	<body>
+		<div class="form" id="popup">
+			<b>Click here to RSVP</b><hr/>
+			<p id="onclick">RSVP</p>
+			<br/>
+		</div>
+		<div id ="contactdiv">
+<img src="images/button_cancel.png" class="img" id="cancel">
+		<h1>RSVP</h1>
+			<form action="send.php" method="post">
+		
+			<h3><br>First Name:<br><br></h3>
+			<input type="text" name="firstname" id="firstname" required><br>
+			<h3><br>Last Name:<br><br></h3>
+			<input type="text" name="lastname" id="lastname" required><br>
+			<h3><br>Email Address:<br><br></h3>
+			<input type="email" name="email" id="email" required><br>
+			<h3><br>Address:<br><br></h3>
+			<input type="text" name="address" id="address" required><br>
+			<h3><br>Address 2:<br><br></h3>
+			<input type="text" name="address2" id="address2"><br>
+			<h3><br>State:<br><br></h3>
+			<select name= "states">
+				<option value="NJ">New Jersey</option>
+				<option value="PE">Peru</option>
+				<option value="PR">Puerto Rico</option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="AZ">Arizona</option>
+				<option value="AR">Arkansas</option>
+				<option value="CA">California</option>
+				<option value="CO">Colorado</option>
+				<option value="CT">Connecticut</option>
+				<option value="DE">Delaware</option>
+				<option value="DC">District Of Columbia</option>
+				<option value="FL">Florida</option>
+				<option value="GA">Georgia</option>
+				<option value="HI">Hawaii</option>
+				<option value="ID">Idaho</option>
+				<option value="IL">Illinois</option>
+				<option value="IN">Indiana</option>
+				<option value="IA">Iowa</option>
+				<option value="KS">Kansas</option>
+				<option value="KY">Kentucky</option>
+				<option value="LA">Louisiana</option>
+				<option value="ME">Maine</option>
+				<option value="MD">Maryland</option>
+				<option value="MA">Massachusetts</option>
+				<option value="MI">Michigan</option>
+				<option value="MN">Minnesota</option>
+				<option value="MS">Mississippi</option>
+				<option value="MO">Missouri</option>
+				<option value="MT">Montana</option>
+				<option value="NE">Nebraska</option>
+				<option value="NV">Nevada</option>
+				<option value="NH">New Hampshire</option>
+				<option value="NM">New Mexico</option>
+				<option value="NY">New York</option>
+				<option value="NC">North Carolina</option>
+				<option value="ND">North Dakota</option>
+				<option value="OH">Ohio</option>
+				<option value="OK">Oklahoma</option>
+				<option value="OR">Oregon</option>
+				<option value="PA">Pennsylvania</option>
+				<option value="RI">Rhode Island</option>
+				<option value="SC">South Carolina</option>
+				<option value="SD">South Dakota</option>
+				<option value="TN">Tennessee</option>
+				<option value="TX">Texas</option>
+				<option value="UT">Utah</option>
+				<option value="VT">Vermont</option>
+				<option value="VA">Virginia</option>
+				<option value="WA">Washington</option>
+				<option value="WV">West Virginia</option>
+				<option value="WI">Wisconsin</option>
+				<option value="WY">Wyoming</option>
+			</select><br><br>
+			<h3><br>Zip Code:<br><br></h3>
+			<input type="text" name="zipcode" id="zipcode" required><br><br>
+			<h3> <br>Phone Number:<br><br></h3>
+			<input type="text" name="phonenumber" pattern="^\d{3}-\d{3}-\d{4}$" id="phonenumber" required><br><br>
+			<h2>Dinner Selection</h2>
+			<h3><input type="radio" name="dinner selection" value="Chicken" > Chicken<br> </h3>
+			<h3><input type="radio" name="dinner selection" value="Beef"> Beef<br> </h3>
+			<h3><input type="radio" name="dinner selection" value="Fish"> Fish <br><br> </h3>
+			<div class="g-recaptcha" data-sitekey="6LfEUiQTAAAAAF01K_a9nCGLZnYrLyDY4TyNwrpO"></div><br><br>
+			<input type="submit" value="Submit" id="submit"><br><br>
+		</form>
+		</div>
+	</body>
+</html>
