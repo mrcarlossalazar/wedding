@@ -10,8 +10,7 @@ $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
 
 
-$link = mysql_connect('nj5rh9gto1v5n05t.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
-:3306', 'l359jm5246ldgfqn', 'enu1agq34j8fjzya');
+$conn = new mysqli($hostname, $username, $password, $database);
 if (!$link) {
     die('Could not connect: ' . mysql_error());
 }

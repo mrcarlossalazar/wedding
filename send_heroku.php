@@ -1,9 +1,11 @@
 <?php
-$servername = "nj5rh9gto1v5n05t.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306
-";
-$username = "l359jm5246ldgfqn";
-$password = "c1b5usjy5e8xg9km";
-$dbname = "test";
+$url = getenv('JAWSDB_URL');
+$dbparts = parse_url($url);
+
+$hostname = $dbparts['host'];
+$username = $dbparts['user'];
+$password = $dbparts['pass'];
+$database = ltrim($dbparts['path'],'/');
 $date = new DateTime();
 
 
@@ -19,7 +21,7 @@ $phonenumber=$_POST['phonenumber'];
 $date=$_POST['date'];
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($hostname, $username, $password, $database);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
