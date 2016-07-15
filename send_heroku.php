@@ -6,7 +6,6 @@ $hostname = $dbparts['host'];
 $username = $dbparts['user'];
 $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
-$date = new data_create();
 
 $firstname=$_POST['firstname'];
 $lastname=$_POST['lastname'];
