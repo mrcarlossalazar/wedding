@@ -6,7 +6,7 @@ $hostname = $dbparts['host'];
 $username = $dbparts['user'];
 $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
-$date = new DateTime();
+$date = new data_create();
 
 
 $firstname=$_POST['firstname'];
@@ -19,6 +19,7 @@ $address2=$_POST['address2'];
 $zipcode=$_POST['zipcode'];
 $phonenumber=$_POST['phonenumber'];
 $date=$_POST['date'];
+$date->date_format($date, 'U = Y-m-d H:i:s');
 
 // Create connection
 $conn = new mysqli($hostname, $username, $password, $database);
@@ -31,7 +32,19 @@ if ($conn->connect_error) {
 
 $sql = "SELECT DATABASE()";
 
-"INSERT INTO guests (firstname,lastname, email,state,dinner,address,address2,zipcode,phonenumber,date) VALUES ('$firstname', '$lastname','$email','$states','$dinner','$address','$address2','$zipcode','$phonenumber','$date')";
+"CREATE TABLE guests(
+firstname varchar(255),
+lastname varchar(255),
+email varchar(255),
+states varchar(255),
+dinner_selection varchar(255),
+address varchar(255),
+address2 varchar(255),
+zipcode varchar(255),
+date varchar(255))";
+
+
+"INSERT INTO guests (firstname,lastname, email,states,dinner,address,address2,zipcode,phonenumber,date) VALUES ('$firstname', '$lastname','$email','$states','$dinner','$address','$address2','$zipcode','$phonenumber','$date')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Guests added to RVSP List successfully  ";
