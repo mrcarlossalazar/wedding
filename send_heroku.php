@@ -8,7 +8,6 @@ $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
 $date = new data_create();
 
-
 $firstname=$_POST['firstname'];
 $lastname=$_POST['lastname'];
 $email=$_POST['email'];
@@ -27,14 +26,6 @@ $conn = new mysqli($hostname, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-
-// sql to create table
-
-$sql = "SELECT DATABASE()";
-
-
-"INSERT INTO guests (firstname,lastname, email,states,dinner,address,address2,zipcode,phonenumber,date) VALUES ('$firstname', '$lastname','$email','$states','$dinner','$address','$address2','$zipcode','$phonenumber','$date')";
-
 if ($conn->query($sql) === TRUE) {
     echo "Guests added to RVSP List successfully  ";
 } else {
