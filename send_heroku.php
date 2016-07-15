@@ -30,7 +30,7 @@ if ($conn->connect_error) {
 
 // sql to create table
 
-$sql = "CREATEDB wedding";
+$sql = "SELECT DATABASE()";
 
 
 "INSERT INTO guests (firstname,lastname, email,states,dinner,address,address2,zipcode,phonenumber,date) VALUES ('$firstname', '$lastname','$email','$states','$dinner','$address','$address2','$zipcode','$phonenumber','$date')";
