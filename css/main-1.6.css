@@ -491,7 +491,7 @@ section h2 {
 
     #introtext {
         padding: 26px 0 14px 0;
-        display: inline-block;
+        display: table;
     }
 
     #introtext .head-Lindsey {
