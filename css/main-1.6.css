@@ -273,26 +273,26 @@ padding:3px;
 color:white;
 cursor:pointer;
 padding:5px 5px 5px 15px;
-width:120px;
+width:80%;
 color:white;
 background-color:#123456;
 box-shadow:1px 1px 5px grey;
-border-radius:3px;
+border-radius:15px;
 }
 b{
 font-size:18px;
 }
 #popup{
-padding-top:80px;
+padding-top:30px;
 }
 .form{
-border-radius:2px;
-padding:20px 30px;
+border-radius:30px;
+padding:0px 0px;
 box-shadow:0 0 15px;
 font-size:14px;
 font-weight:bold;
-width:300px;
-margin:0px 256px 3px 260px;
+width:80%;
+margin:0px 0px 0px 0px;
 float:left;
 }
 select {
