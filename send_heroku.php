@@ -26,8 +26,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT DATABASE enu1agq34j8fjzya";
-
 if ($conn->query($sql) === TRUE) {
     echo "Guests added to RVSP List successfully  ";
 } else {
