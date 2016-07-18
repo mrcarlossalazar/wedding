@@ -464,13 +464,24 @@ section h2 {
 }
 #bg-image img {
     position: absolute; 
-    top: -65%; 
-    left: -62%; 
+    top: -60%; 
+    left: -60%; 
     right: 0; 
     bottom: 0; 
     margin: auto; 
     min-width: 30%;
     min-height: 30%;
+}
+
+#contactdiv{
+opacity:0.92;
+position: absolute;
+top: 25px;
+left: 0px;
+width: 100%;
+background: #501;
+box-shadow:0 0 1000px;
+display: none;
 }
     /** get the transparent bar on the bottom **/
     .header-container {
@@ -558,7 +569,7 @@ section h2 {
         padding: 40px 40px 70px 40px;
     }
     section h1 {
-        font-size: 2.9em;
+        font-size: 3.0em;
     }
     section h2 {
         font-size: 1.7em;
