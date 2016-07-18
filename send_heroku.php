@@ -27,9 +27,9 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO guests (firstname,lastname, email,states,dinner,address,address2,zipcode,phonenumber,date) VALUES ('$firstname', '$lastname','$email','$states','$dinner','$address','$address2','$zipcode','$phonenumber','$date')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Guests added to RVSP List successfully";
+    echo "Guest(s) registered successfully";
 } else {
-    echo "Error RSVPing: " . $conn->error;
+    echo "Error, could not register: " . $conn->error;
 }
 
 $conn->close();
