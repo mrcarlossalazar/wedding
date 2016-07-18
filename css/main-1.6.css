@@ -467,7 +467,7 @@ section h2 {
 }
 #bg-image img {
     position: absolute; 
-    top: -60%; 
+    top: -55%; 
     left: -60%; 
     right: 0; 
     bottom: 0; 
@@ -475,7 +475,10 @@ section h2 {
     min-width: 30%;
     min-height: 30%;
 }
-
+#daf img{
+    width: 50%;
+    height: 50%;
+}
 #contactdiv{
 opacity:0.92;
 position: absolute;
@@ -1162,7 +1165,7 @@ float:left;
 }
 .responsive-image.proposal img {
     border: 10px solid #090909;
-
+    width: 90%;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     -moz-border-radius: 8px;
