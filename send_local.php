@@ -26,10 +26,10 @@ if ($conn->connect_error) {
 
 // sql to create table
 
-$sql = "INSERT INTO guests (firstname,lastname, email,state,dinner,address,address2,zipcode,phonenumber,date) VALUES ('$firstname', '$lastname','$email','$states','$dinner','$address','$address2','$zipcode','$phonenumber','$date')";
+
 
 if ($conn->query($sql) === TRUE) {
-    echo "Guests added to RVSP List successfully  ";
+    echo "Guests added to RVSP List successfully ";
 } else {
     echo "Error RSVPing: " . $conn->error;
 }
