@@ -17,7 +17,6 @@ $address2=$_POST['address2'];
 $zipcode=$_POST['zipcode'];
 $phonenumber=$_POST['phonenumber'];
 $date=$_POST['date'];
-$date->date_format($date, 'U = Y-m-d H:i:s');
 
 // Create connection
 $conn = new mysqli($hostname, $username, $password, $database);
@@ -27,7 +26,7 @@ if ($conn->connect_error) {
 } 
 
 if ($conn->query($sql) === TRUE) {
-    echo "Guests added to RVSP List successfully  ";
+    echo "Guests added to RVSP List successfully";
 } else {
     echo "Error RSVPing: " . $conn->error;
 }
