@@ -24,7 +24,7 @@ $conn = new mysqli($hostname, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 
-$sql = "INSERT INTO guests (firstname,lastname, email,state,dinner,address,address2,zipcode,phonenumber,date) VALUES ('$firstname', '$lastname','$email','$states','$dinner','$address','$address2','$zipcode','$phonenumber','$date')";
+$sql = "SELECT * from guests;"
 
 if ($conn->query($sql) === TRUE) {
     echo "Guests added to RVSP List successfully";
