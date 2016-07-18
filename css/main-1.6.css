@@ -278,6 +278,8 @@ color:white;
 background-color:#123456;
 box-shadow:1px 1px 5px grey;
 border-radius:15px;
+display: table;
+margin: 0 auto;
 }
 b{
 font-size:18px;
@@ -292,8 +294,9 @@ box-shadow:0 0 15px;
 font-size:14px;
 font-weight:bold;
 width:80%;
-margin:0px 0px 0px 0px;
 float:left;
+   display: table;
+   margin: 0 auto
 }
 select {
 width:80%;
@@ -574,7 +577,10 @@ display: none;
     section h2 {
         font-size: 1.7em;
     }
-
+    section h4 {
+        font-size: 1.5em;
+        text-align: center;
+    }
 
     .column p {
         font-size: 1.1em;
@@ -715,6 +721,10 @@ display: none;
     section h2 {
         font-size: 1.7em;
     }
+    section h4 {
+        font-size: 1.5em;
+        text-align: center;
+    }
 
 
     .column p {
@@ -758,6 +768,10 @@ display: none;
     }
     section h2 {
         font-size: 2.0em;
+    }
+    section h4 {
+        font-size: 1.5em;
+        text-align: center;
     }
 
 /* ============
@@ -815,6 +829,10 @@ display: none;
     section h1 {
         font-size: 5.9em;
     }
+    section h4 {
+        font-size: 1.5em;
+        text-align: center;
+    }
 
     .column.full {
         clear: both;
@@ -845,6 +863,10 @@ display: none;
     }
     section h1 {
         font-size: 7.9em;
+    }
+    section h4 {
+        font-size: 1.5em;
+        text-align: center;
     }
 
     nav a {
@@ -893,7 +915,18 @@ display: none;
         font-size: 1.5em;
         line-height: 145%;
         padding: 0 20px;
-    }  
+    } 
+    .form{
+border-radius:30px;
+padding:0px 0px;
+box-shadow:0 0 15px;
+font-size:14px;
+font-weight:bold;
+width:100%;
+float:left;
+   display: table;
+   margin: 0 auto
+} 
 }
 
 /* ==========================================================================
