@@ -5,8 +5,17 @@
 </head>
 <body>
 <?php
-      $con= new mysqli("localhost","odbc","","test");
-            $table = "<table border=1>";
+
+$url = getenv('JAWSDB_URL');
+$dbparts = parse_url($url);
+
+$hostname = $dbparts['host'];
+$username = $dbparts['user'];
+$password = $dbparts['pass'];
+$database = ltrim($dbparts['path'],'/');
+
+      $con= new mysqli($hostname, $username, $password, $database);
+      $table = "<table border=1>";
 
       $name = $_POST['search'];
 
