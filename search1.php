@@ -16,7 +16,7 @@ $database = ltrim($dbparts['path'],'/');
 
       $con= new mysqli($hostname, $username, $password, $database);
       $table = "<table border=1>";
-      $dummymsg = "Please come back later, Thank you!"
+      $dummymsg = "Please come back later, Thank you!";
 
       $name = $_POST['search'];
 
