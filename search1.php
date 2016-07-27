@@ -23,7 +23,7 @@ $database = ltrim($dbparts['path'],'/');
       {
       echo "Failed to connect to the database: " . mysqli_connect_error();
       }
-      $result = mysqli_query($con, "SELECT firstname, lastname, address,address2,city,state,zip,id  FROM guests WHERE firstname LIKE '%{$name}%'");
+      $result = mysqli_query($con, "SELECT firstname, lastname, address,address2,city,state,zip,id  FROM list WHERE firstname LIKE '%{$name}%'");
 
       while ($row = mysqli_fetch_array($result))
       {
