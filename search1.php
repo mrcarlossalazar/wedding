@@ -16,6 +16,7 @@ $database = ltrim($dbparts['path'],'/');
 
       $con= new mysqli($hostname, $username, $password, $database);
       $table = "<table border=1>";
+      $dummymsg = "Please come back later, Thank you!"
 
       $name = $_POST['search'];
 
@@ -23,7 +24,7 @@ $database = ltrim($dbparts['path'],'/');
       {
       echo "Failed to connect to the database: " . mysqli_connect_error();
       }
-      $result = mysqli_query($con, "SELECT firstname, lastname, address,address2,city,state,zip,id  FROM list WHERE firstname LIKE '%{$name}%'");
+      $result = mysqli_query($con, "SELECT firstname,lastname,address,address2,city,state,zip,id  FROM list WHERE firstname LIKE '%{$name}%'");
 
       while ($row = mysqli_fetch_array($result))
       {
@@ -41,7 +42,7 @@ $database = ltrim($dbparts['path'],'/');
 
 <form id="test">
 <input type="radio" name= "test" id="test" value="test">
-<?php echo $table; ?>
+<?php echo $dummymsg; ?>
 </form>
 </body>
 </html>
