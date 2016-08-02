@@ -28,7 +28,5 @@ if ($conn->query($sql) === TRUE) {
     header("Location:https://salazarwedding.herokuapp.com/");
 
 }
-    sleep(10);
-
 $conn->close();
 ?>
