@@ -12,7 +12,6 @@ $artist=$_POST['artist'];
 $song=$_POST['song'];
 $yt=$_POST['yt'];
 
-USE enu1agq34j8fjzya;
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
