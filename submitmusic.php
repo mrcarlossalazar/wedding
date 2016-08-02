@@ -26,7 +26,7 @@ if ($conn->query($sql) === TRUE) {
 
 } else {
     echo "Try Again " . $conn->error;
-    header("Location:/wedding/home.html?");
+    header("Location:/wedding/home.html");
 
 }
 $conn->close();
