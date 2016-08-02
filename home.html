@@ -174,8 +174,8 @@
                                 <img src="img/katThumb.jpg" class="thumb" alt="Katherine" /><br /><br /><br /><br />
                                 Katherine A. O'Harrah <br /><br />
                                 <h2>Flower Girl</h2><br />
-                                <img src="img/TrinitiThumb.jpg" class="thumb" alt="Triniti" /><br /><br /><br /><br />
-                                Triniti Castillo<br /><br />
+                                <img src="img/christinaThumb.jpg" class="thumb" alt="Christina" /><br /><br /><br /><br />
+                                Christina Castillo<br /><br />
                                 <h2>Parents </h2><br />
                                 <img src="img/michaelThumb.jpg" class="thumb" alt="Michael" /><br /><br /><br /><br />
                                 Michael Posey <br /><br />
@@ -294,7 +294,6 @@
             <div class="column full">
             <div class="hr-t"></div>
             <div class="hr-b"></div>
-            <?php echo $table; ?>
             <pre id=whereToPrint></pre>
 
     <input type="submit" name="button" id = "submit1"><br><br><br><br>
@@ -388,6 +387,35 @@
         </div>
     </section>
 
+
+<section id="music" class="clearfix">
+
+                <br/><h1>Music Requests</h1>
+        <div class="form" id="popup">
+        <h4>Fill out the form below to add your music request!</h4><hr/><br/><br/>
+
+
+<form action="submitmusic.php" method="post">
+
+
+            <h3><br>Artist:<br><br></h3>
+            <input type="text" name="artist" id="artist"  pattern=".{3,}" required title="3 characters minimum" autofocus><br>
+            <h3><br>Song:<br><br></h3>
+            <input type="text" name="song" id="song" required><br>
+            <h3><br>Youtube Link:<br><br></h3>
+            <input type="text" name="yt" id="yt" required><br>
+            <div class="column full">
+            <div class="hr-t"></div>
+            <div class="hr-b"></div>
+             
+    <input type="submit" name="button" id = "submit1"><br><br><br><br>
+<div class="g-recaptcha" data-sitekey="6LfEUiQTAAAAAF01K_a9nCGLZnYrLyDY4TyNwrpO"></div><br><br>
+</div>
+
+</form>
+
+    </div>
+    </section>
 
                 </div> <!-- #main -->
             </div> <!-- #main-container -->
