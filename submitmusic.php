@@ -22,7 +22,7 @@ $sql = "INSERT INTO music (artist,song, yt) VALUES ('$artist','$song','$yt')";
 if ($conn->query($sql) === TRUE) {
     echo "Your request has been submitted";
     sleep(1);
-    header("Location:/wedding/home.html?");
+    header("Location:https://salazarwedding.herokuapp.com/");
 
 } else {
     echo "Try Again " . $conn->error;
