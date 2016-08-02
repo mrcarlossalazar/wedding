@@ -21,7 +21,6 @@ $sql = "INSERT INTO music (artist,song, yt) VALUES ('$artist','$song','$yt')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Your request has been submitted";
-    sleep(10);
     header("Location:https://salazarwedding.herokuapp.com/");
 
 } else {
@@ -29,5 +28,7 @@ if ($conn->query($sql) === TRUE) {
     header("Location:https://salazarwedding.herokuapp.com/");
 
 }
+    sleep(10);
+
 $conn->close();
 ?>
