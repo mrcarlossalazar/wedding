@@ -32,7 +32,7 @@ $database = ltrim($dbparts['path'],'/');
       echo $table;
       sleep(1);
 
-     header("Location:/wedding/home.html?");
+     header("Location:https://salazarwedding.herokuapp.com/");
       mysqli_close($con);
 ?> 
 
