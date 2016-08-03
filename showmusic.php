@@ -17,21 +17,25 @@ $database = ltrim($dbparts['path'],'/');
       {
       echo "Failed to connect to the database: " . mysqli_connect_error();
       }
-      $result = mysqli_query($con, "SELECT *  FROM music");
+      $result = mysqli_query($con, "SELECT * FROM music");
 
       while ($row = mysqli_fetch_array($result))
       {
- $table .= "<tr><td>" . $row['music_id'] . " </td><td>" . $row['artist'] . " </td><td>" . $row['song'] . " </td><td>" .  $row['yt'] . "<br></td></tr>";
+        $table .= '<tr>';
+        foreach($row as $key=>$value) {
+        $table .= '<td>',$music_id,'</td>',$artist,'</td>',$song,'</td>',$yt,'</td>';
+      }
+        $table .= '</tr>';
+      }
+
+
+ //$table .= "<tr><td>" . $row['music_id'] . " </td><td>" . $row['artist'] . " </td><td>" . $row['song'] . " </td><td>" .  $row['yt'] . "<br></td></tr>";
     $table .= "</table>";
 
-      }
+      
       echo $table;
       sleep(1);
 
      // header("Location:/wedding/home.html?");
       mysqli_close($con);
 ?> 
-
-
-
-
