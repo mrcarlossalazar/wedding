@@ -28,7 +28,7 @@ $database = ltrim($dbparts['path'],'/');
                    $table .= "</tr>";
       }
       $table .= "</table>";
-
+      sleep(1);
       echo $table;
       sleep(1);
 
