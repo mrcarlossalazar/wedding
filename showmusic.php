@@ -29,9 +29,10 @@ $database = ltrim($dbparts['path'],'/');
       }
       $table .= "</table>";
       echo $table;
+      echo '<form><button formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>';
       mysqli_close($con);
 
-      echo '<form><button formaction="https://salazarwedding.herokuapp.com/">Go back</button>';
+
 
 ?> 
 
