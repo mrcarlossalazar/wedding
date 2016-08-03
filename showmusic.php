@@ -9,13 +9,15 @@ $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
 
       $con= new mysqli($hostname, $username, $password, $database);
-      $table = "<table border=1>";
+      $table = "<table border=1>" ."<td>Artist</td>"."<td>song</td>"."<td>Youtube Link</td>";
 
       if (mysqli_connect_errno()){
       echo "Failed to connect to the database: " . mysqli_connect_error();
                                  }
-                                 
+
       $result = mysqli_query($con, "SELECT *  FROM music");
+
+
 
       while ($row = mysqli_fetch_array($result))
       {
@@ -30,7 +32,7 @@ $database = ltrim($dbparts['path'],'/');
       echo $table;
       sleep(1);
 
-     // header("Location:/wedding/home.html?");
+     header("Location:/wedding/home.html?");
       mysqli_close($con);
 ?> 
 
