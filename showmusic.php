@@ -28,12 +28,10 @@ $database = ltrim($dbparts['path'],'/');
                    $table .= "</tr>";
       }
       $table .= "</table>";
-      sleep(10);
       echo $table;
-      sleep(10);
-
       mysqli_close($con);
-      header("Location:https://salazarwedding.herokuapp.com/");
+
+      echo '<form><button formaction="https://salazarwedding.herokuapp.com/">Go back</button>';
 
 ?> 
 
