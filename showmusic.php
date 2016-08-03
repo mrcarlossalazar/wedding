@@ -30,7 +30,7 @@ $database = ltrim($dbparts['path'],'/');
       $table .= "</table>";
       sleep(10);
       echo $table;
-      sleep(1);
+      sleep(10);
 
      header("Location:https://salazarwedding.herokuapp.com/");
       mysqli_close($con);
