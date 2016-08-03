@@ -32,8 +32,9 @@ $database = ltrim($dbparts['path'],'/');
       echo $table;
       sleep(10);
 
-     header("Location:https://salazarwedding.herokuapp.com/");
       mysqli_close($con);
+      header("Location:https://salazarwedding.herokuapp.com/");
+
 ?> 
 
 
