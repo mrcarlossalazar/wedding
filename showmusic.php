@@ -24,7 +24,7 @@ $database = ltrim($dbparts['path'],'/');
                    $table .= "<tr>";
                    $table .= "<td>".$row[artist]."</td>";
                    $table .= "<td>".$row[song]."</td>";
-                   $table .= "<td><a href="".$row[yt].""></td>";
+                   $table .= "<td><a href=".$row[yt]."></td>";
                    $table .= "</tr>";
       }
       $table .= "</table>";
