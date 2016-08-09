@@ -14,28 +14,18 @@ $database = ltrim($dbparts['path'],'/');
       if (mysqli_connect_errno()){
       echo "Failed to connect to the database: " . mysqli_connect_error();
                                  }
-
       $result = mysqli_query($con, "SELECT *  FROM music");
-
-
 
       while ($row = mysqli_fetch_array($result))
       {
                    $table .= "<tr>";
                    $table .= "<td>".$row[artist]."</td>";
                    $table .= "<td>".$row[song]."</td>";
-                   $table .= "<td><a href=".$row[yt]."></td>";
+                   $table .= "<td><a href=".$row[yt].">".$row[song]."</td>";
                    $table .= "</tr>";
       }
       $table .= "</table>";
       echo $table;
       echo '<form><button formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>';
       mysqli_close($con);
-
-
-
 ?> 
-
-
-
-
