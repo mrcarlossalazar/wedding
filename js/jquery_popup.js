@@ -1,6 +1,6 @@
 $(document).ready(function()
     {
-        $("#modalOpener").click(function() {
+        $("#open").click(function() {
             $(window).scrollTo(0,0);
             $("#contactdiv").fadeIn('slow')
             $("#heading").fadeOut('slow');
