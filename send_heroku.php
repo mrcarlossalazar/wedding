@@ -16,7 +16,6 @@ $address=$_POST['address'];
 $address2=$_POST['address2'];
 $zipcode=$_POST['zipcode'];
 $phonenumber=$_POST['phonenumber'];
-$date=$_POST['date'];
 
 // Create connection
 $conn = new mysqli($hostname, $username, $password, $database);
@@ -24,7 +23,7 @@ $conn = new mysqli($hostname, $username, $password, $database);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);}
 
-$sql = "INSERT INTO guests (firstname,lastname, email,states,dinner,address,address2,zipcode,phonenumber,date) VALUES ('$firstname', '$lastname','$email','$states','$dinner','$address','$address2','$zipcode','$phonenumber','$date')";
+$sql = "INSERT INTO guests (firstname,lastname, email,states,dinner,address,address2,zipcode,phonenumber) VALUES ('$firstname', '$lastname','$email','$states','$dinner','$address','$address2','$zipcode','$phonenumber')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Guest(s) registered successfully";
