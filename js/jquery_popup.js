@@ -1,6 +1,6 @@
 $(document).ready(function()
     {
-        $("#onclick").click(function() {
+        $("#rsvp").click(function() {
             $(window).scrollTo(0,0);
             $("#contactdiv").fadeIn('slow')
             $("#heading").fadeOut('slow');
