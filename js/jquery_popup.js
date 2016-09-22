@@ -1,6 +1,6 @@
 $(document).ready(function()
     {
-        $("#open").click(function() {
+        $("#submit").click(function() {
             $(window).scrollTo(0,0);
             $("#contactdiv").fadeIn('slow')
             $("#heading").fadeOut('slow');
@@ -20,7 +20,7 @@ $(document).ready(function()
             $("#wedding").fadeIn('slow');
             $("#registry").fadeIn('slow');
         });
-        $("#submit").click(function() {
+        $("#submit1").click(function() {
             $(this).parent().fadeOut('slow');
             $("#heading").fadeIn('slow');
             $("#introtext").fadeIn('slow');
