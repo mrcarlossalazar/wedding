@@ -35,6 +35,6 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 	sleep(10);
 
-      header("Location:/wedding/home.html");
+      header("Location:/home.html");
 
 ?>
