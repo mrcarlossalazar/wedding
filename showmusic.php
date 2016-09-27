@@ -42,7 +42,7 @@
                   <div class="main wrapper clearfix">
                         <div class="clearfix"></div>
                         <section id="brideandgroom" class="clearfix">
-                              <h2>Salazar Wedding Music Requests</h2>
+                              <h1>Music Requests</h1>
                               <div class="column full">
                                     <?php echo $table; ?>
                               <form><button class="button round"="https://salazarwedding.herokuapp.com/">Go Back</button></form>
