@@ -45,7 +45,7 @@
                               <h1>Music Requests</h1>
                               <div class="column full">
                                     <?php echo $table; ?>
-                              <form><button class="button round"="https://salazarwedding.herokuapp.com/">Go Back</button></form>
+                              <form><button class="button round" formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>
                               </div><!--end column-->
                         </section>
                         </div> <!-- #main -->
