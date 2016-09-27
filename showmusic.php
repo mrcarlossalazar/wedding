@@ -1,13 +1,3 @@
-<html>
-<head>
-<title>Salazar Wedding Music Requests</title>
-    <link rel="stylesheet" href="css/responsive-tables.css">
-    <script src="js/vendor/responsive-tables.js"></script>
-
-</head>
-<body>
-
-
 <?php
 
 $url = getenv('JAWSDB_URL');
@@ -39,5 +29,3 @@ $database = ltrim($dbparts['path'],'/');
       echo '<form><button formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>';
       mysqli_close($con);
 ?> 
-</body>
-</html>
