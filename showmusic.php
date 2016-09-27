@@ -9,7 +9,7 @@ $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
 
       $con= new mysqli($hostname, $username, $password, $database);
-      $table = "<table class=". ""responsive"". ">" ."<td>Artist</td>"."<td>Song Title</td>"."<td>Youtube Link</td>";
+      $table = "<table>" ."<td>Artist</td>"."<td>Song Title</td>"."<td>Youtube Link</td>";
 
       if (mysqli_connect_errno()){
       echo "Failed to connect to the database: " . mysqli_connect_error();
