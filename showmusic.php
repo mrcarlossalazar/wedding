@@ -17,7 +17,7 @@
             $password = $dbparts['pass'];
             $database = ltrim($dbparts['path'],'/');
             $con= new mysqli($hostname, $username, $password, $database);
-            $table ='<table border="1|0" class = "responsive">'."<td>Artist</td>"."<td>Song Title</td>"."<td>Youtube Link</td>";
+            $table ='<table border="2|1" class = "responsive">'."<td>Artist</td>"."<td>Song Title</td>"."<td>Youtube Link</td>";
             if (mysqli_connect_errno()){
             echo "Failed to connect to the database: " . mysqli_connect_error();
             }
@@ -49,8 +49,6 @@
                               <form><button class="button round"="https://salazarwedding.herokuapp.com/">Go Back</button></form>
                               </div><!--end column-->
                         </section>
-                        
-                        
                         </div> <!-- #main -->
                         </div> <!-- #main-container -->
                         </div> <!-- #bg-container -->
