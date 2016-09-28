@@ -41,7 +41,7 @@
             <div class="main-container">
                   <div class="main wrapper clearfix">
                         <div class="clearfix"></div>
-                        <section id="brideandgroom" class="clearfix">
+                        <section id="brideandgroom" class="clearfix" height = "250%">
                               <h1>Music Requests</h1>
                               <div class="column full">
                                     <?php echo $table; ?>
