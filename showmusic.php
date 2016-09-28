@@ -10,6 +10,9 @@
             <style type="text/css"> section {height: 250%;}</style>
       </head>
       <body>
+            <img src="img/spotify.png" c alt="Click to Add Your Music Requests!" />
+            <h2> Current Spotify List<h2>
+            <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12181151300%3Aplaylist%3A48eZqdIOuon1uS1CKyIp4M" width="100%" height="100%" frameborder="1" allowtransparency="true"></iframe>
             <?php
             $url = getenv('JAWSDB_URL');
             $dbparts = parse_url($url);
