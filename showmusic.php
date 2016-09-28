@@ -7,6 +7,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
             <script src="js/vendor/responsive-tables.js"></script>
             <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+            <style type="text/css"> #special section {height: 250%;}</style>
       </head>
       <body>
             <?php
@@ -38,24 +39,22 @@
       </div>
       <div id="bg-container">
             
-            <div class="main-container">                        
-            <h1>Music Requests</h1>
-
+            <div class="main-container">
                   <div class="main wrapper clearfix">
-                         <section>
-                        <h1>Spotify Requests</h1>
+                        <section>
+                              <h1>Spotify Requests</h1>
                               <div class="column full">
-                              <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12181151300%3Aplaylist%3A48eZqdIOuon1uS1CKyIp4M" width="100%" frameborder="1" allowtransparency="true"></iframe>
+                                    <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12181151300%3Aplaylist%3A48eZqdIOuon1uS1CKyIp4M" width="100%" height="100%" frameborder="1" allowtransparency="true"></iframe>
                               <form><button class="button round" formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>
                               </div><!--end column-->
                         </section>
-                        <section height="250%">
+                        <div id="special"><section>
                               <h1>Youtube Requests</h1>
                               <div class="column full">
                                     <?php echo $table; ?>
                               <form><button class="button round" formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>
                               </div><!--end column-->
-                        </section>
+                        </section></div>
                         </div> <!-- #main -->
                         </div> <!-- #main-container -->
                         </div> <!-- #bg-container -->
