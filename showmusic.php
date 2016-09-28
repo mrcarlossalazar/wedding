@@ -7,7 +7,6 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
             <script src="js/vendor/responsive-tables.js"></script>
             <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-            <style type="text/css"> section {height: 250%;}</style>
       </head>
       <body>
             <?php
@@ -50,7 +49,7 @@
                               <form><button class="button round" formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>
                               </div><!--end column-->
                         </section>
-                        <section>
+                        <section height="250%">
                               <h1>Youtube Requests</h1>
                               <div class="column full">
                                     <?php echo $table; ?>
