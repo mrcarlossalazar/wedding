@@ -7,6 +7,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
             <script src="js/vendor/responsive-tables.js"></script>
             <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+            <style type="text/css"> section {height: 250%;}</style>
       </head>
       <body>
             <?php
