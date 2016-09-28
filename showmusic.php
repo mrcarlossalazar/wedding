@@ -44,7 +44,7 @@
                         <section>
                               <h1>Spotify Requests</h1>
                               <div class="column full">
-                                    <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12181151300%3Aplaylist%3A48eZqdIOuon1uS1CKyIp4M" width="100%" height="100%" frameborder="1" allowtransparency="true"></iframe>
+                                    <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12181151300%3Aplaylist%3A48eZqdIOuon1uS1CKyIp4M" width="100%" height="75%" frameborder="1" allowtransparency="true"></iframe>
                               <form><button class="button round" formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>
                               </div><!--end column-->
                         </section>
