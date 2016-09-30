@@ -48,13 +48,7 @@
                               <form><button class="button round" formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>
                               </div><!--end column-->
                         </section>
-                        <div id="special"><section>
-                              <h1>Youtube Requests</h1>
-                              <div class="column full">
-                                    <?php echo $table; ?>
-                              <form><button class="button round" formaction="https://salazarwedding.herokuapp.com/">Go Back</button></form>
-                              </div><!--end column-->
-                        </section></div>
+                       
                         </div> <!-- #main -->
                         </div> <!-- #main-container -->
                         </div> <!-- #bg-container -->
