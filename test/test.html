@@ -11,14 +11,7 @@
             </div>
             <div id="myModal">
                 <h1>Test</h1>
-            </div>
-            <div id="myModal" class="reveal-modal" role="dialog" aria-labelledby="modalTitle" data-reveal="" aria-hidden="true">
-                <h2 id="modalTitle">Awesome. I have it.</h2>
-                <p class="lead">
-                    Your couch. It is mine. 
-                </p>
-                <a class="close-reveal-modal" aria-label="Close">&times;</a>
-            </div>
+            </div>           
         </fieldset>
     </div>
 </section>
@@ -31,14 +24,12 @@
         </div>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/plugins/foundation.reveal.js"></script><script>
-
-
-	  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">	  
 $(document).ready(function(){
 	$('#myButton').click(function() {
   		$.ajax({
-		  type: "GET",
+		  type: "POST",
 		  url: "dev-team02.printersource.com:8080/searcheid",
 		  data: {eid:$('#eid').val()},	  
 		  crossDomain: "true"
@@ -46,5 +37,4 @@ $(document).ready(function(){
 		});
 	});
 			    
- 
- </script>
+  </script>
