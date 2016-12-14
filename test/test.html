@@ -40,7 +40,6 @@ $(document).ready(function(){
   		$.ajax({
 		  type: "GET",
 		  url: "//dev-team02.printersource.com:8080/searcheid",
-		  useDefaultXhrHeader: false, //important, otherwise its not working		  
 		  data: {eid:$('#eid').val()},	  
 		  dataType: "xml",
 		  crossDomain: "true"
