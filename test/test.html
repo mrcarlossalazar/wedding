@@ -39,9 +39,8 @@ $(document).ready(function(){
 	$('#myButton').click(function() {
   		$.ajax({
 		  type: "GET",
-		  url: "//dev-team02.printersource.com:8080/searcheid",
+		  url: "dev-team02.printersource.com:8080/searcheid",
 		  data: {eid:$('#eid').val()},	  
-		  dataType: "xml",
 		  crossDomain: "true"
 			});
 		});
