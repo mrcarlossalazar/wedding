@@ -1,0 +1,52 @@
+<div class="sticky">
+</div>
+<section id="main-content" role="main">
+    <div class="small-12 columns">
+        <h1><img src="images/logo%20%281%29.png"></h1>
+        <fieldset id="fieldset10">
+            <legend>Equipment ID Search</legend>
+            <div>
+                <input id="eid" name="eid" type="number">
+                <button id="myButton" value="Click Me!">Search</button>
+            </div>
+            <div id="myModal">
+                <h1>Test</h1>
+            </div>
+            <div id="myModal" class="reveal-modal" role="dialog" aria-labelledby="modalTitle" data-reveal="" aria-hidden="true">
+                <h2 id="modalTitle">Awesome. I have it.</h2>
+                <p class="lead">
+                    Your couch. It is mine. 
+                </p>
+                <a class="close-reveal-modal" aria-label="Close">&times;</a>
+            </div>
+        </fieldset>
+    </div>
+</section>
+<footer>
+    <div>
+        <div class="small-12 columns centered-text">
+            <p>
+                &copy; Copyright 2016 The Printer Source<br>
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/plugins/foundation.reveal.js"></script><script>
+
+
+	  
+$(document).ready(function(){
+	$('#myButton').click(function() {
+  		$.ajax({
+		  type: "GET",
+		  url: "//dev-team02.printersource.com:8080/searcheid",
+		  useDefaultXhrHeader: false, //important, otherwise its not working		  
+		  data: {eid:$('#eid').val()},	  
+		  dataType: "xml",
+		  crossDomain: "true"
+			});
+		});
+	});
+			    
+ 
+ </script>
