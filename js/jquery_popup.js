@@ -9,10 +9,8 @@ $(document).ready(function()
             $("#accommodations").fadeOut('slow');
             $("#wedding").fadeOut('slow');
             $("#registry").fadeOut('slow');
-            $("#music").fadeOut('slow');     
-     
-
-        });
+            $("#music").fadeOut('slow');
+                    });
         $("#cancel").click(function() {
             $(this).parent().fadeOut('slow');
             $("#heading").fadeIn('slow');
